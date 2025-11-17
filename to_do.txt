@@ -1,0 +1,3 @@
+To-Do
+------------
+make the left side show the current total as well as the desired total

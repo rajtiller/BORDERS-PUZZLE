@@ -1,3 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial;
+  overflow: hidden;
+  background: #e8f5e9; /* Light green background */
+}
+
+button {
+  font-family: inherit;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -39,54 +56,4 @@
 
 .read-the-docs {
   color: #888;
-}
-
-/* high-contrast token styles */
-.token-btn {
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  background: #ffd60a;
-  color: #000;
-  font-weight: 800;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border: 2px solid #111;
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.6);
-  cursor: grab;
-  user-select: none;
-}
-.token-btn:active {
-  cursor: grabbing;
-  transform: translateY(1px);
-}
-.token-btn.selected {
-  box-shadow: 0 0 0 4px rgba(255, 214, 10, 0.15), 0 6px 10px rgba(0, 0, 0, 0.6);
-  background: #ff9500;
-}
-
-/* board token */
-.board-token {
-  cursor: grab;
-}
-.board-token:active {
-  cursor: grabbing;
-  transform: translateY(1px);
-}
-
-/* grid basics (keeps dark high contrast look) */
-.grid {
-  background: linear-gradient(90deg, #000, #070707);
-}
-
-/* small responsive tweaks */
-@media (max-width: 640px) {
-  .puzzle-root {
-    flex-direction: column;
-  }
-  .grid {
-    transform: scale(0.9);
-    transform-origin: top left;
-  }
 }
